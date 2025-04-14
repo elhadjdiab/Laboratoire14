@@ -6,18 +6,71 @@
   <title>Abdoulaye Diallo</title>
 
   <style>
+
+    /* MENU */
+    nav {
+      background-color: #D32F2F;
+      padding: 10px 20px;
+      top: 0;
+      z-index: 100;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffcccb;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #D32F2F;
+    }
+
+    header img {
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    header p {
+      font-size: 20px;
+      margin-top: 20px;
+    }
     .container {
         justify-content: center;
         display: flex;
         flex-direction: row;
-        gap:  5px  ;
         border-radius: 10px;
         border-style: double;
+        margin: 200px ;
+        background-color: gray;
     }
 
     .first{
         background-color: red;
-        height: 400px;
         width: 400px;
         border-style: dotted;
         border-radius: 10px;
@@ -25,14 +78,12 @@
 
     .second {
         background-color: yellow;
-        height: 400px;
         width: 400px;
         border-style: dotted;
         border-radius: 10px;
     }
     .third {
         background-color: green;
-        height: 400px;
         width: 400px;
         border-style: dotted;
         border-radius: 10px;
@@ -42,20 +93,49 @@
 </head>
 <body>
 
-  <h1 style="text-align: center;">Bienvenue sur ma page !</h1>
-  <p style="text-align: center;"> Je m'appelle Abdoulaye Diallo et je suis guinéen.</p>
+    <nav>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#a-propos-guinee">À propos</a></li>
+        </ul>
+    </nav>
+
+    <!-- ENTÊTE -->
+  <header id="accueil">
+    <h1>Elhadj Diallo</h1>
+    <img src="https://www.drapeaux-du-monde.fr/drapeaux-du-monde/3000/drapeau-guinee.jpg" alt="Drapeau de la Guinée">
+    <p>Bienvenue ! Je vais vous faire visiter mon pays 🇬🇳</p>
+  </header>
 
   <div class="container">
     <div class="first">
-        <h2>Session 1</h2>
+        <h2></h2>
     </div>
     <div class="second">
-        <h2>Session 2</h2>
+        <h2></h2>
     </div>
     <div class="third">
-        <h2>Session 3</h2>
+        <h2></h2>
     </div>
   </div>
+
+  <section id="a-propos-guinee" style="padding: 40px; background-color: #f4f4f4;">
+    <h2 style="color: #D32F2F; font-size: 28px; margin-bottom: 20px;">À propos de la Guinée</h2>
+    <p style="font-size: 18px; line-height: 1.6;">
+      La <strong>Guinée</strong>, située en Afrique de l'Ouest, est un pays riche en ressources naturelles et en diversité culturelle.
+      Sa capitale est <strong>Conakry</strong>, une ville côtière dynamique. La Guinée est connue pour ses paysages variés,
+      allant des montagnes du Fouta-Djalon aux plages de l'Atlantique, en passant par ses nombreux fleuves.
+    </p>
+    <p style="font-size: 18px; line-height: 1.6;">
+      Le pays est également réputé pour sa musique, notamment les percussions traditionnelles, et pour son hospitalité.
+      Il compte plusieurs groupes ethniques, chacun avec ses langues et traditions propres. L’économie repose sur
+      l’agriculture, l’exploitation minière (notamment la bauxite), et de plus en plus sur les services.
+    </p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Flag_of_Guinea.svg/1200px-Flag_of_Guinea.svg.png"
+         alt="Drapeau de la Guinée"
+         style="width: 200px; margin-top: 20px; border: 1px solid #ccc; border-radius: 8px;">
+  </section>
+  
 
 
 
